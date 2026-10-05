@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+}
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    color: #1f3b5d;
+    border-bottom: 2px solid #eef4fa;
+    padding-bottom: 0.5rem;
+}
+
+
+
+
+.site-header {
+    display: flex;
+    justify-content: space-between; /* Numele în stânga, meniul în dreapta */
+    align-items: center;            /* Aliniere pe mijloc pe verticală */
+    padding: 16px 32px;
+    background-color: #1f3b5d;
+    color: #ffffff;
+}
+
+.site-header .logo {
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;                      /* Spațiul dintre legături */
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.plan-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;         
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;          
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;                    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, 
+select:focus {
+    outline: 2px solid #5b3fd9;
+    border-color: transparent;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #5b3fd9;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #482fb5;
+}
+
+
+
+
+.cards {
+    display: grid;
+    /* Grid responsive: adaptează automat numărul de coloane (min 220px) */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;                      /* Gap vizibil între carduri */
+}
+
+.card {
+    padding: 20px;                  /* Padding vizibil */
+    border: 1px solid #d0d7e2;      /* Border vizibil */
+    border-radius: 10px;            /* Border-radius vizibil */
+    background-color: #ffffff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Pseudo-clasa :hover la trecerea mouse-ului */
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 0.25rem;
+    color: #1f3b5d;
+}
+
+.card .country {
+    font-size: 0.85rem;
+    color: #666666;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card .duration {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+
+
+.card.featured {
+    border: 2px solid #5b3fd9;      /* Bordură diferită */
+    background-color: #f4f0ff;      /* Fundal diferit */
+}
+
+
+
+.tips-list {
+    padding-left: 1.5rem;
+}
+
+.tips-list li {
+    margin-bottom: 0.5rem;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1f3b5d;
+    color: #ffffff;
+    margin-top: 2rem;
+}
